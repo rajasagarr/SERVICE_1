@@ -24,4 +24,5 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
-      - sayBye: echo "Bye Take Care"
+      - name: Say Bye 
+        run echo "Bye Take Care ${{ github.actor }}"
