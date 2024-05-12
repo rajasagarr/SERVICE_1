@@ -28,3 +28,6 @@ jobs:
         run: echo "Bye Take Care ${{ github.actor }}"
       - name: Print Secret
         run: echo "Secret key picked from Secret config - ${{ secrets.SEC_KEY }}" | sed -e 's/\(.\)/\1 /g'
+      - name: ENV check
+        with:
+          env: ${{ github.event.inputs.environment }}
