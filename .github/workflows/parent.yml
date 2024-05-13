@@ -1,0 +1,15 @@
+name: parent workflow
+
+on:
+  workflow_calls:
+    inputs:
+      env:
+        required: false
+        type: string
+        default: "DEV"
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    
