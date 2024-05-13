@@ -8,6 +8,8 @@ on:
         type: environment
         required: true
   pull_request:
+    branches: [ main ]
+    paths: 'SERVICE_1/**'
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
