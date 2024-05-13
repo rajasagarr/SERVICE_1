@@ -5,7 +5,7 @@ on:
       data:
         required: false
         type: string
-        default: "DEV"
+        default: "DATA"
 
 jobs:
   build:
