@@ -9,7 +9,7 @@ on:
         required: true
   pull_request:
     branches: [ main ]
-    paths: 'SERVICE_1/**'
+    paths: 'service1/**'
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
