@@ -37,3 +37,7 @@ jobs:
         run: echo "Bye Take Care ${{ github.actor }}"
       - name: Print Secret
         run: echo "Secret key picked from Secret config - ${{ secrets.SEC_KEY }}" | sed -e 's/\(.\)/\1 /g'
+      - name: echo "calling parent"
+        uses: ArisGlobal/SharedActions/.github/workflows/java-maven-build-test.yml@latest
+        with:
+          env: ${{ github.event.inputs.environment }}
