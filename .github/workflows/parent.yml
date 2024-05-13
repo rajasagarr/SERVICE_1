@@ -1,7 +1,6 @@
 name: parent workflow
-
 on:
-  workflow_calls:
+  workflow_call:
     inputs:
       data:
         required: false
@@ -13,5 +12,5 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
     steps:
-      - run: echo "🎉 The job was automatically triggered by a ${{ data }} event."
+      - run: echo "🎉 The job was automatically triggered by a ${{ inputs.data }} event."
     
