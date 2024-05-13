@@ -13,6 +13,6 @@ on:
 
 jobs:
   build-and-test:
-    uses: rajasagarr/SERVICE_1/.github/workflows/parent.yml
+    uses: rajasagarr/SERVICE_1/.github/workflows/parent.yml@latest
     with:
       data: 'data passed from ci flow'
