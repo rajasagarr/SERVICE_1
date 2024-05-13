@@ -13,6 +13,7 @@ on:
 
 jobs:
   build-and-test:
-    uses: rajasagarr/SERVICE_1/.github/workflows/parent.yml@latest
+    # uses: rajasagarr/SERVICE_1/.github/workflows/parent.yml@latest if it was in a diff repo
+    uses: .github/workflows/parent.yml@latest
     with:
       data: 'data passed from ci flow'
