@@ -38,6 +38,6 @@ jobs:
       - name: Print Secret
         run: echo "Secret key picked from Secret config - ${{ secrets.SEC_KEY }}" | sed -e 's/\(.\)/\1 /g'
       - name: echo "calling parent"
-        uses: ArisGlobal/SharedActions/.github/workflows/java-maven-build-test.yml@latest
+        uses: rajasagarr/SERVICE_1/.github/workflows/parent.yml@latest
         with:
-          env: ${{ github.event.inputs.environment }}
+          data: 'data passed from ci flow'
